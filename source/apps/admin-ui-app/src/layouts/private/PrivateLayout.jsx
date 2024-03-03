@@ -206,17 +206,16 @@ const PrivateLayout = ({}) => {
                             {/* <!-- Sidenav Accordion (Dashboard)--> */}
                             <a className="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseDashboards" aria-expanded="false" aria-controls="collapseDashboards">
                                 <div className="nav-link-icon"><i data-feather="activity"></i></div>
-                                Main Content
+                                Widgets
                                 <div className="sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
                             </a>
                             <div className="collapse" id="collapseDashboards" data-bs-parent="#accordionSidenav">
                                 <nav className="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
-                                    <a className="nav-link" href="dashboard-1.html">
-                                        Default
+                                    <a className="nav-link" href="/app/widgets/list">
+                                        All Widgets
                                         <span className="badge bg-primary-soft text-primary ms-auto">Updated</span>
                                     </a>
-                                    <a className="nav-link" href="dashboard-2.html">Multipurpose</a>
-                                    <a className="nav-link" href="dashboard-3.html">Affiliate</a>
+                                    <a className="nav-link" href="/app/widgets/item">Create New</a>
                                 </nav>
                             </div>
                             {/* <!-- Sidenav Heading (Custom)--> */}
