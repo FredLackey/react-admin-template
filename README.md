@@ -8,6 +8,10 @@ Almost every web application project I launch these days has two common traits. 
 
 ## Setup  
 
+### NPM vs Yarn  
+
+On this project I opted for Yarn instead of NPM.  If you are just trying out this project, I recommend you stick with Yarn as well.  Although there is ony one dependency at the moment (`admin-data`), it makes use of package linking.  Should you use NPM you will not be able to reference `admin-data` without modifying the code or manually linking it with whatever package manager you use.
+
 ### Local Development
 
 1. Clone the repo  
