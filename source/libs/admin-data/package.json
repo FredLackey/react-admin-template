@@ -1,0 +1,14 @@
+{
+  "name"   : "admin-data",
+  "version": "0.0.0",
+  "main"   : "index.js",
+  "license": "Apache-2.0",
+  "author" : {
+    "name" : "Fred Lackey",
+    "email": "fred.lackey@gmail.com",
+    "url"  : "https://fredlackey.com"
+  },
+  "scripts": {
+    "postinstall": "yarn link"
+  }
+}
