@@ -1,27 +1,30 @@
 {
-  "name"   : "admin-ui-app",
+  "name": "admin-ui-app",
   "private": true,
   "version": "0.0.0",
-  "type"   : "module",
+  "type": "module",
   "scripts": {
-    "dev"        : "vite",
-    "build"      : "vite build",
-    "preview"    : "vite preview",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "postinstall": "yarn link admin-data"
   },
   "author": {
-    "name" : "Fred Lackey",
+    "name": "Fred Lackey",
     "email": "fred.lackey@gmail.com",
-    "url"  : "https://fredlackey.com"
+    "url": "https://fredlackey.com"
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "preact"          : "^10.19.6",
-    "react-query"     : "^3.39.3",
+    "buffer": "^6.0.3",
+    "jwt-decode": "^4.0.0",
+    "preact": "^10.19.6",
+    "prop-types": "^15.8.1",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.22.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.8.1",
-    "vite"               : "^5.1.4"
+    "vite": "^5.1.4"
   }
 }

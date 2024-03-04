@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'preact/compat';
+import { Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import PrivateLayout from './layouts/private/PrivateLayout'
 import PublicLayout from './layouts/public/PublicLayout'
@@ -22,9 +22,7 @@ export function App() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* <Suspense fallback={<Loading txt="Suspense" />}> */}
-      <BrowserRouter>
         <Routes>
-
           <Route path="app" element={<PrivateLayout />}>
             <Route path="widgets" element={<WidgetPage />}>
               <Route path="list" element={<WidgetList />} />
@@ -35,7 +33,6 @@ export function App() {
           </Route>
           <Route path="*" element={<PublicLayout />} />
         </Routes>
-      </BrowserRouter>
     </QueryClientProvider>
   )
 }
